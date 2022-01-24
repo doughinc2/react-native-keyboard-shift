@@ -27,6 +27,10 @@ export default function KeyboardShift(props: Props) {
     const { height: windowHeight } = Dimensions.get('window');
     const keyboardHeight = keyboard.keyboardHeight;
     const currentlyFocusedInputRef = TextInput.State.currentlyFocusedInput();
+    if (!currentlyFocusedInputRef) {
+      return;
+    }
+
     currentlyFocusedInputRef.measure((_x, _y, _width, height, _pageX, pageY) => {
       const gap = windowHeight - keyboardHeight - (pageY + height);
       if (gap >= 0) {
