@@ -1,6 +1,6 @@
 {
   "name": "@tastyworks/react-native-keyboard-shift",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A 2020s compatible keyboard avoiding view for Android and iOS that just works.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
